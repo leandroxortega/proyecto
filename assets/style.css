@@ -1,48 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+
+
+:root {
+--titulos: #d96831;
+--parrafos:#e6b33d;
+--fondo: #172c3c;
+--fondomenu:#274862;
+}
+
+
+
+
 *{
 margin: 0;
 padding: 0;
+box-sizing: border-box;
+text-decoration: none;  
+list-style-type: none;
 }
 
 
 body {
-    background: #172c3c;
+background: #172c3c;
 }
 
 /*CONTENIDO MENU PRINCIPAL*/
 
 
-
 .etiquetas-menu{ 
-height: 50px;
 display: flex;
-flex-direction: row;
-flex-wrap: wrap;
 justify-content: center;
+flex-wrap: wrap;
+height: 50px;
 padding: 15px 0 0px 0px;
-gap: 50px;
 list-style: none;
-background: #274862;
+background: var(--fondomenu);
+gap: 30px;
+
 }
 
 .etiquetas-menu li a:hover { 
 
-color: #e6b33d;  
+color: var(--parrafos); 
 
 }
 .etiquetas-menu li a { 
-text-decoration: none;    
+flex-wrap: wrap;  
 text-align: center;
-color: #d96831;
+color: var(--titulos);
 font-family: 'Cabin', sans-serif;
 }
-
-
-
-
-
 
 
 /*INFORMACION MAIN*/
@@ -51,13 +59,15 @@ font-family: 'Cabin', sans-serif;
 .contenido {
 display: flex;
 flex-direction: row;
-gap: 50px;
+align-items: center;
 padding: 50px;
+gap: 50px;
+
 }
 
 .contenido-imagen img{
 display: flex;
-flex-direction: column;
+justify-self: center;
 border-radius: 20px;
 }
 
@@ -68,20 +78,20 @@ justify-content: center;
 }
 
 .seccion1 h1 {
-color: #d96831;
+color: var(--titulos);
 font-size: 40px;
 font-family: 'Sora', sans-serif;
 }
 
 .seccion1 p {
-color: #e6b33d;
+color: var(--parrafos);
 font-family: 'Cabin', sans-serif;
 }
 
 
 .boton h4{
 margin-top: 15px;
-background-color: #d96831;
+background-color: var(--titulos);
 height: 20px;
 width: 100px;
 font-size: 15px;
@@ -107,7 +117,7 @@ align-items: center;
 flex-wrap: wrap;
 gap: 25px;
 border-radius: 1rem;
-background: #e6b33d;
+background: var(--parrafos);
 -webkit-box-shadow: -1px 2px 17px 2px rgba(217,104,49,1);
 -moz-box-shadow: -1px 2px 17px 2px rgba(217,104,49,1);
 box-shadow: -1px 2px 17px 2px rgba(217,104,49,1)
@@ -119,15 +129,15 @@ width: 250px;
 }
 
 .card-contenido h3 { 
-color: #172c3c;
+color: var(--fondo);
 font-size: 50px;
 font-family: 'Sora', sans-serif;
 text-align: center;
 }
 
 .card-contenido p {
-color: #172c3c;
+color: var(--fondomenu);
 font-family: 'Sora', sans-serif;
 text-align: center;
-
+max-width: 350px;
  }
