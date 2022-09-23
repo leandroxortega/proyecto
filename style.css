@@ -1,122 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 *{
 margin: 0;
 padding: 0;
 }
 
-/*ESTO SERIA LA PARTE DE INDEX.HTML*/
-.menu-principal {
 
-background-color:rgb(255, 255, 255);
-overflow: visible;
-
+body {
+    background: #172c3c;
 }
+
+/*ESTO SERIA LA PARTE DE INDEX.HTML*/
+
 
 
 .etiquetas-menu{ 
-padding: 5px 10px 15px 10px;
+height: 50px;
 display: flex;
 flex-direction: row;
-justify-content:center;
-gap: 25px;
- list-style: none;
+flex-wrap: wrap;
+justify-content: center;
+gap: 50px;
+list-style: none;
+background: #274862;
+padding: 15px 0px 0px 0px;
 }
 
 .etiquetas-menu li a:hover { 
 
-color: rgb(219, 146, 77);   
+color: #e6b33d;  
 
 }
 .etiquetas-menu li a { 
 text-decoration: none;    
 text-align: center;
-color: rgb(0, 0, 0);
-font-family: 'Roboto Slab', serif;
-}
-
-.logo img {
- height: 150px;
- width: 150px;  
-
-}
-
-.logo {
-text-align: center;
+color: #d96831;
+padding: 10px 0px 0px 0px;
+font-family: 'Cabin', sans-serif;
 }
 
 
 
-.titulos-informacion {
-justify-content: center;
-text-align: center;
-padding: 50px 10px 10px 10px;
-margin: 20px 150px 20px 150px;
-font-family: 'Roboto Slab', serif;
-}
 
-.titulos-informacion h2  {
-font-weight: bold;
-line-height: 2em;
-padding: 50px 0 0 0;
-color: rgb(219, 146, 77);  
-}
-
-.titulos-informacion h1  {
-line-height: 2em;
-font: bold;
-}
-
-
-.informacion {
-display: flex;
-flex-direction: row;
-justify-content: center;
-padding: 50px 250px 0px 250px;
-font-family: 'Roboto Slab', serif;
-font-weight: bold;
-font-size: small;
-gap: 50px;
-
-}
-
-.card img {
-height: 200px;
-width: 200px;
-border-radius: 1em;
-background-color: rgba(39, 38, 38, 0.274);
-}
-
-.imagenfinal {
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 50px 10px 10px 10px;
-margin: 20px 150px 20px 150px;
-text-align: center;
-gap: 25px;
-font-family: 'Roboto Slab', serif;
-font-weight: bold;
-}
 
 
 
 /* ESTO SERIA LA PARTE DE CULTURA-JW.HTML*/
 
-.historiajw{
-padding: 50px 500px 10px 500px;
-text-align: center;
-font-family: 'Roboto Slab', serif;
+
+.contenido {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items:stretch;
+gap: 10px;
 }
 
-.historiajw img{
+.contenido img {
+width: 800px;
 height: 500px;
-width: 400px;
-border-radius: 1em;
+padding: 25px 15px 15px 15px;
+border-radius: 2em;
 }
 
-.historiajw h1{
-color: rgb(219, 146, 77); 
-line-height: 3em;
+
+.seccion1 {
+max-width: 400px;
+max-height: 400px;
+margin: 15px 15px 15px 15px;
+padding: 150px 0px 0px 15px;
 }
+
+
+.seccion1 h1 {
+color: #d96831;
+font-size: 40px;
+font-family: 'Sora', sans-serif;
+}
+
+.seccion1 p {
+color: #e6b33d;
+font-family: 'Cabin', sans-serif;
+}
+
+
+.boton h4{
+margin-top: 15px;
+padding: 5px;
+background-color: #d96831;
+height: 20px;
+width: 100px;
+font-size: 15px;
+text-align: center;
+border-radius: 1em;
+font-family: 'Cabin', sans-serif;
+}
+
+
+
+
+.card {
+display: flex;
+flex-direction: row;
+margin: 0px 45px 0px 45px;
+gap: 50px;
+margin-top: 100px;
+}
+
+.card-contenido {
+display: flex;
+flex-direction: column;
+justify-content: start;
+flex-wrap: wrap;
+gap: 15px;
+margin: 10px 10px 10px 10px;
+border-radius: 1rem;
+background: #e6b33d;
+-webkit-box-shadow: -1px 2px 17px 2px rgba(217,104,49,1);
+-moz-box-shadow: -1px 2px 17px 2px rgba(217,104,49,1);
+box-shadow: -1px 2px 17px 2px rgba(217,104,49,1)
+}
+
+.card-contenido img {
+height: 200px;
+width: 250px;
+}
+
+.card-contenido h3 { 
+color: #172c3c;
+font-size: 50px;
+font-family: 'Arimo', sans-serif;
+padding: 0px 15px 0px 15px;
+}
+
+.card-contenido p {
+color: #172c3c;
+max-width: 600px;
+max-height: 400px;
+font-family: 'Sora', sans-serif;
+padding: 0px 10px 25px 10px;
+
+ }
