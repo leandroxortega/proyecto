@@ -31,6 +31,11 @@ position: sticky;
 top: 0px;
 }
 
+main {
+max-width: 1300px;
+margin: 0px;
+}
+
 
 /*CONTENIDO MENU PRINCIPAL*/
 
@@ -120,8 +125,7 @@ flex-direction: row;
 justify-content: center;
 align-content: center;
 gap: 50px;
-margin: 50px 50px 50px 50px;
-
+margin: 15px 0px 25px 40px;
 
 }
 
@@ -174,6 +178,3 @@ height: 30px;
  font-family: 'Sora', sans-serif;
 }
 
-main {
-max-width: 1300px;
-}
