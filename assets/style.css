@@ -21,9 +21,16 @@ list-style-type: none;
 }
 
 
+
 body {
-background: #172c3c;
+background: var(--fondo)
 }
+
+header {
+position: sticky;
+top: 0px;
+}
+
 
 /*CONTENIDO MENU PRINCIPAL*/
 
@@ -36,7 +43,7 @@ height: 80px;
 padding: 25px 0 0px 0px;
 list-style: none;
 background: var(--fondomenu);
-gap: 40px;
+gap: 40px; 
 }
 
 .etiquetas-menu li a:hover { 
@@ -60,33 +67,37 @@ display: flex;
 flex-direction: row;
 align-items: center;
 padding: 50px;
-gap: 50px;
-
+gap: 25px;
 }
 
 .contenido-imagen img{
+background-color:
 display: flex;
-flex-direction: column;
 justify-self: center;
 border-radius: 20px;
+width: 100%;
+min-width: 300px;
 }
 
 .seccion1  {
-gap: 20px;
+gap: 15px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+width: 50%;
 }
 
 .seccion1 h1 {
 color: var(--titulos);
 font-size: 40px;
 font-family: 'Sora', sans-serif;
+width: 100%;
 }
 
 .seccion1 p {
 color: var(--parrafos);
 font-family: 'Cabin', sans-serif;
+width: 65%;
 }
 
 
@@ -107,14 +118,17 @@ color: var(--parrafos)
 display: flex;
 flex-direction: row;
 justify-content: center;
+align-content: center;
 gap: 50px;
 margin: 50px 50px 50px 50px;
+
 
 }
 
 .card-contenido {
 display: flex;
 flex-direction: column;
+align-content: center;
 align-items: center;
 gap: 25px;
 border-radius: 1rem;
@@ -158,4 +172,8 @@ height: 30px;
  .piepagina a {
  color: var(--titulos);   
  font-family: 'Sora', sans-serif;
+}
+
+main {
+max-width: 1300px;
 }
