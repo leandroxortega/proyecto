@@ -230,12 +230,19 @@ width: 100%;
 }
 .card {
 flex-wrap: wrap;
-max-height: 35%;
 }
 
-        
+.card-contenido p{
+font-size: 12px;
+}
+
 .card-contenido img {
- width: 70%;
+max-width: 50%;
+max-height: 30%;
+}
+.card-contenido h3 {
+font-size: 30px;
+
 }
 }
 
@@ -260,7 +267,5 @@ max-height: 35%;
 }
 .card-contenido {  
     max-width: 70%;
-}
-
-                
+}             
 }
