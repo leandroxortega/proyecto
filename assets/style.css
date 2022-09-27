@@ -74,12 +74,11 @@ padding: 50px;
 gap: 25px;
 }
 
-.contenido-imagen img{
-background-color:
+.contenido-imagen img {
 display: flex;
 justify-self: center;
 border-radius: 20px;
-width: 100%;
+max-width: 100%;
 }
 
 .seccion1  {
@@ -231,11 +230,9 @@ width: 100%;
 }
 .card {
 flex-wrap: wrap;
+max-height: 35%;
 }
 
-.card-contenido {
-max-width: 70%;
-}
         
 .card-contenido img {
  width: 70%;
@@ -259,13 +256,11 @@ width: 100%;
 }
 .card {
 flex-wrap: wrap;
+max-height: 35%;
 }
-        
-.card-contenido {
-max-width: 70%;
+.card-contenido {  
+    max-width: 70%;
 }
+
                 
-.card-contenido img {
-width: 70%;
-}
 }
